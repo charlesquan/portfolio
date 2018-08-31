@@ -57,11 +57,9 @@ a
 }
 .segment
 {
-	white-space: nowrap;
-	overflow-x: auto;
+	//white-space: nowrap;
+	//overflow-x: auto;
 	text-align: center;
-	width: 75%;
-	height: 75%;
 }
 .thumbnail
 {
