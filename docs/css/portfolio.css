@@ -57,12 +57,11 @@ a
 }
 .segment
 {
-	display: inline;
 	text-align: center;
 }
 .thumbnail
 {
-	//display: inline-block;
+	position: relative;
 	cursor: pointer;
 	width: 168px;
 	height: 117px;
