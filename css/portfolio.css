@@ -1,0 +1,162 @@
+body
+{
+	font-family: arial;
+	user-select: none;
+	margin: 0;
+}
+a
+{
+	text-decoration: none;
+}
+.container
+{
+	max-width: 640px;
+	max-height: 360px;
+	margin: auto;
+}
+.videoWrapper 
+{
+	position: relative;
+	width: 100%;
+    height: 0;
+	padding-bottom: 56.25%;
+}
+.videoWrapper iframe 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.frame_bg
+{
+	background-color: dimgray;
+}
+.frame
+{
+	height: 100%;
+	background-color: white;
+	max-width: 960px;
+	margin: auto;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+.heading
+{
+	text-align: center;
+	background-color: silver;
+	padding: 10px;
+}
+.subheading
+{
+	font-size: 40px;
+	text-align: center;
+	color: silver;
+	padding:20px;
+}
+.segment
+{
+	white-space: nowrap;
+	overflow-x: auto;
+	text-align: center;
+}
+.thumbnail
+{
+	display: inline-block;
+	cursor: pointer;
+	width: 168px;
+	height: 117px;
+	background-color: silver;
+	margin: 10px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.thumbnail:hover, .back:hover
+{
+    filter: contrast(50%) brightness(150%);
+}
+.thumbnail:active, .back:active
+{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+    filter: contrast(100%) brightness(100%);
+}
+.placeholder
+{
+	width: 168px;
+	height: 94px;
+	background-color: magenta;
+}
+.caption
+{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+}
+#thumb_maya, #thumb_ike
+{
+	border: 4px solid dimgray;
+	background-color: dimgray;
+}
+#thumb_flash_mv > .caption, #thumb_ike > .caption, #thumb_mario > .caption, #thumb_sonic > .caption
+{
+	font-size: 17px;
+	padding-bottom: 3px;
+}
+.games
+{
+	text-align: center;
+}
+.button_back
+{
+	text-align: center;
+}
+.back
+{
+	cursor: pointer;
+	color: white;
+	border: none;
+	font-size: 20px;
+	border-radius: 30px;
+	background-color: silver;
+	padding: 10px 30px;
+	text-shadow: 1px 1px 1px black;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+	outline: none;
+	margin: 20px 0;
+}
+.fanart
+{
+	margin: 10px;
+}
+
+/*games*/
+
+.games img, .fanart img
+{
+	cursor: pointer;
+}
+.games img:hover, .fanart img:hover
+{
+    filter: contrast(50%) brightness(150%);
+}
+.games img:active, .fanart img:active
+{
+    filter: contrast(100%) brightness(100%);
+}
+#overlay
+{
+	display: none;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .75);
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+#overlay_image img
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
