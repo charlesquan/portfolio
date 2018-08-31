@@ -65,7 +65,11 @@ a
 {
 	display: inline-block;
 	cursor: pointer;
+<<<<<<< HEAD
 	width: 126px;
+=======
+	width: 168px;
+>>>>>>> 63e20452b4da59425c19ce0afe50603fa2951afd
 	height: 87.75px;
 	background-color: silver;
 	margin: 10px;
