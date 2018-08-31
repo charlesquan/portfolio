@@ -61,10 +61,10 @@ a
 }
 .thumbnail
 {
-	position: relative;
+	display: inline-block;
 	cursor: pointer;
-	width: 168px;
-	height: 117px;
+	width: 16vw;
+	height: 11.2vw;
 	background-color: silver;
 	margin: 10px;
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
@@ -86,7 +86,7 @@ a
 }
 .caption
 {
-	font-size: 20px;
+	font-size: 2vw;
 	color: white;
 	text-align: center;
 	text-shadow: 1px 1px 1px black;
@@ -98,7 +98,7 @@ a
 }
 #thumb_flash_mv > .caption, #thumb_ike > .caption, #thumb_mario > .caption, #thumb_sonic > .caption
 {
-	font-size: 17px;
+	font-size: 1.7vw;
 	padding-bottom: 3px;
 }
 .games
