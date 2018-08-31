@@ -7,7 +7,7 @@ function video_set(number, id)
 	video_number = number;
 	video_id = id;
 
-	document.getElementById("responsive_video").src = "http://www.youtube.com/embed/" + video_id + "?rel=0&autoplay=1";
+	document.getElementById("responsive_video").src = "https://www.youtube.com/embed/" + video_id + "?rel=0&autoplay=1";
 
 	for(var i = 0; i < videoArray.length; i++)
 	{
