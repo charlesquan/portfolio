@@ -12,7 +12,8 @@ body
 {
 	height: 100%;
 	background-color: white;
-	margin: 0 12vw;
+	max-width: 960px;
+	margin: auto;
 	border: solid antiquewhite;
 	border-width: 0 3px;
 	text-align: center;
