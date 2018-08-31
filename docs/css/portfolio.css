@@ -58,7 +58,7 @@ a
 .segment
 {
 	white-space: nowrap;
-	overflow-x: scroll;
+	overflow-x: auto;
 	text-align: center;
 }
 .thumbnail
