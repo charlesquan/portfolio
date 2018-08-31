@@ -57,14 +57,16 @@ a
 }
 .segment
 {
+	white-space: nowrap;
+	overflow-x: auto;
 	text-align: center;
 }
 .thumbnail
 {
 	display: inline-block;
 	cursor: pointer;
-	width: 16vw;
-	height: 11.2vw;
+	width: 168px;
+	height: 117px;
 	background-color: silver;
 	margin: 10px;
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
@@ -86,7 +88,7 @@ a
 }
 .caption
 {
-	font-size: 2vw;
+	font-size: 20px;
 	color: white;
 	text-align: center;
 	text-shadow: 1px 1px 1px black;
@@ -98,7 +100,7 @@ a
 }
 #thumb_flash_mv > .caption, #thumb_ike > .caption, #thumb_mario > .caption, #thumb_sonic > .caption
 {
-	font-size: 1.7vw;
+	font-size: 17px;
 	padding-bottom: 3px;
 }
 .games
