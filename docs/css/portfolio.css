@@ -82,6 +82,14 @@ a
 {
 	right: 0;
 }
+.less::after
+{
+	content: "\25C0";
+}
+.more::after
+{
+	content: "\25B6";
+}
 .scroll
 {
 	overflow-x: auto;

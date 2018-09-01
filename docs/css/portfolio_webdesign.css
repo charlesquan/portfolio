@@ -126,6 +126,14 @@ a:hover
 {
 	right: 0;
 }
+.prev::after
+{
+	content: "\276E";
+}
+.next::after
+{
+	content: "\276F";	
+}
 #caption_current, #caption_next
 {
 	position: absolute;
