@@ -69,8 +69,8 @@ a
 	width: 42px;
 	height: 145px;
 	line-height: 145px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: white;
 	opacity: .5;
 	pointer-events: none;
 	z-index: 2;
