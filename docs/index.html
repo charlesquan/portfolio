@@ -19,9 +19,9 @@
 
 <div class="subheading">Animation</div>
 <div class="segment">
-	<div class="less"></div>
-	<div class="more"></div>
-	<div class="scroll" id="animation">
+	<div class="less" id="animation_less"></div>
+	<div class="more" id="animation_more"></div>
+	<div class="scroll" id="animation" onscroll="scroll_btn('animation')">
 	<div class="thumbnail" onclick="video_set(0, '5iPXM7eKvaE')" id="thumb_maya">
 	<script>videoArray.push("thumb_maya");</script>
 	<div class="caption">Maya</div>	
@@ -54,9 +54,9 @@
 <p style="border-bottom:1px solid silver">
 <div class="subheading">Art</div>
 <div class="segment">
-	<div class="less" style="height:137px; line-height:137px"></div>
-	<div class="more" style="height:137px; line-height:137px"></div>
-	<div class="scroll"  id="art">
+	<div class="less" id="art_less" style="height:137px; line-height:137px"></div>
+	<div class="more" id="art_more" style="height:137px; line-height:137px"></div>
+	<div class="scroll"  id="art" onscroll="scroll_btn('art')">
 	<a href="portfolio_webdesign.html">
 	<div class="thumbnail">
 	<div class="caption">My Cat Melle</div>

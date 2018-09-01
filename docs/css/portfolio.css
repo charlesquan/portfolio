@@ -76,6 +76,7 @@ a
 }
 .less
 {
+	visibility: hidden;
 	left: 0;
 }
 .more

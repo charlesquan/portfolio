@@ -2,6 +2,8 @@ var video_number = "";
 var video_id = "";
 var videoArray = [];
 
+var scroll_id = "";
+
 function video_set(number, id)
 {
 	video_number = number;
@@ -17,6 +19,28 @@ function video_set(number, id)
 
 	document.getElementById(videoArray[video_number]).style.border = "4px solid dimgray";
 	document.getElementById(videoArray[video_number]).style.backgroundColor = "dimgray";
+}
+
+function scroll_btn(id)
+{
+	scroll_id = id;
+
+	if(document.getElementById(scroll_id).scrollLeft == 0)
+	{
+		document.getElementById(scroll_id + "_less").style.visibility = "hidden";
+	}
+	else
+	{
+		document.getElementById(scroll_id + "_less").style.visibility = "visible";
+	}
+	if(document.getElementById(scroll_id).scrollLeft == (document.getElementById(scroll_id).scrollWidth - document.getElementById(scroll_id).clientWidth))
+	{
+		document.getElementById(scroll_id + "_more").style.visibility = "hidden";
+	}
+	else
+	{
+		document.getElementById(scroll_id + "_more").style.visibility = "visible";
+	}
 }
 
 //games & fanart
