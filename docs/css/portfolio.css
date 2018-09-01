@@ -64,15 +64,17 @@ a
 .less, .more
 {
 	position: absolute;
-	font-size: 30px;
+	font-size: 84px;
 	top: 0;
 	width: 42px;
 	height: 145px;
 	line-height: 145px;
 	color: white;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: black;
+	opacity: .5;
 	pointer-events: none;
 	z-index: 2;
+	font-weight: 900;
 }
 .less
 {
@@ -86,11 +88,11 @@ a
 }
 .less::after
 {
-	content: "\25C0\FE0E";
+	content: "\276C\FE0E";
 }
 .more::after
 {
-	content: "\25B6\FE0E";
+	content: "\276D\FE0E";
 }
 .scroll
 {
