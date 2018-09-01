@@ -2,8 +2,6 @@ var video_number = "";
 var video_id = "";
 var videoArray = [];
 
-var scroll_id = "";
-
 function video_set(number, id)
 {
 	video_number = number;
@@ -21,25 +19,34 @@ function video_set(number, id)
 	document.getElementById(videoArray[video_number]).style.backgroundColor = "dimgray";
 }
 
-function scroll_btn(id)
+function scroll_btn()
 {
-	scroll_id = id;
-
-	if(document.getElementById(scroll_id).scrollLeft == 0)
+	for(var i = 0; i < arguments.length; i++)
 	{
-		document.getElementById(scroll_id + "_less").style.visibility = "hidden";
-	}
-	else
-	{
-		document.getElementById(scroll_id + "_less").style.visibility = "visible";
-	}
-	if(document.getElementById(scroll_id).scrollLeft == (document.getElementById(scroll_id).scrollWidth - document.getElementById(scroll_id).clientWidth))
-	{
-		document.getElementById(scroll_id + "_more").style.visibility = "hidden";
-	}
-	else
-	{
-		document.getElementById(scroll_id + "_more").style.visibility = "visible";
+		if(document.getElementById(arguments[i]).scrollWidth > document.getElementById(arguments[i]).clientWidth)
+		{
+			if(document.getElementById(arguments[i]).scrollLeft == 0)
+			{
+				document.getElementById(arguments[i] + "_less").style.visibility = "hidden";
+			}
+			else
+			{
+				document.getElementById(arguments[i] + "_less").style.visibility = "visible";
+			}
+			if(document.getElementById(arguments[i]).scrollLeft == (document.getElementById(arguments[i]).scrollWidth - document.getElementById(arguments[i]).clientWidth))
+			{
+				document.getElementById(arguments[i] + "_more").style.visibility = "hidden";
+			}
+			else
+			{
+				document.getElementById(arguments[i] + "_more").style.visibility = "visible";
+			}
+		}
+		else
+		{
+			document.getElementById(arguments[i] + "_less").style.visibility = "hidden";
+			document.getElementById(arguments[i] + "_more").style.visibility = "hidden";	
+		}
 	}
 }
 
