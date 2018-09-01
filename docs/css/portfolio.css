@@ -57,9 +57,35 @@ a
 }
 .segment
 {
-	white-space: nowrap;
-	overflow-x: auto;
+	position: relative;
+	white-space: nowrap;	
 	text-align: center;
+}
+.less, .more
+{
+	position: absolute;
+	font-size: 20px;
+	top: 0;
+	width: 42px;
+	height: 145px;
+	line-height: 145px;
+	color: white;
+	background-color: black;
+	opacity: .2;
+	pointer-events: none;
+	z-index: 2;
+}
+.less
+{
+	left: 0;
+}
+.more
+{
+	right: 0;
+}
+.scroll
+{
+	overflow-x: auto;
 }
 .thumbnail
 {
