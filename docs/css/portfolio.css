@@ -71,7 +71,7 @@ a
 	line-height: 145px;
 	color: white;
 	background-color: black;
-	opacity: .3;
+	opacity: .5;
 	pointer-events: none;
 	z-index: 2;
 }
