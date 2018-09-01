@@ -128,11 +128,11 @@ a:hover
 }
 .prev::after
 {
-	content: "\276E\FE0E";
+	//content: "\276E\FE0E";
 }
 .next::after
 {
-	content: "\276F\FE0E";	
+	//content: "\276F\FE0E";	
 }
 #caption_current, #caption_next
 {
