@@ -81,6 +81,7 @@ a
 }
 .more
 {
+	visibility: hidden;
 	right: 0;
 }
 .less::after
