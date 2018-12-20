@@ -130,15 +130,20 @@ a
 	text-align: center;
 	text-shadow: 1px 1px 1px black;
 }
-#thumb_maya, #thumb_ike
+#thumb_motion, #thumb_ike
 {
 	border: 4px solid dimgray;
 	background-color: dimgray;
 }
-#thumb_flash_mv > .caption, #thumb_ike > .caption, #thumb_mario > .caption, #thumb_sonic > .caption
+#thumb_ike > .caption, #thumb_mario > .caption, #thumb_sonic > .caption
 {
 	font-size: 17px;
 	padding-bottom: 3px;
+}
+.loops
+{
+	display: inline-block;
+	max-width: 640px;
 }
 .games
 {
@@ -167,17 +172,15 @@ a
 	margin: 10px;
 }
 
-/*games*/
-
-.games img, .fanart img
+.loops img, .games img, .fanart img
 {
 	cursor: pointer;
 }
-.games img:hover, .fanart img:hover
+.loops img:hover, .games img:hover, .fanart img:hover
 {
     filter: contrast(50%) brightness(150%);
 }
-.games img:active, .fanart img:active
+.loops img:active, .games img:active, .fanart img:active
 {
     filter: contrast(100%) brightness(100%);
 }
