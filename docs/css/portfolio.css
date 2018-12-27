@@ -130,16 +130,16 @@ a
 	text-align: center;
 	text-shadow: 1px 1px 1px black;
 }
-#thumb_motion, #thumb_ike
+#thumb_motion
 {
 	border: 4px solid dimgray;
 	background-color: dimgray;
 }
-#thumb_ike > .caption, #thumb_mario > .caption, #thumb_sonic > .caption
+/*#thumb_motion > .caption //smaller text caption
 {
 	font-size: 17px;
 	padding-bottom: 3px;
-}
+}*/
 .loops
 {
 	display: inline-block;
@@ -167,12 +167,8 @@ a
 	outline: none;
 	margin: 20px 0;
 }
-.fanart
-{
-	margin: 10px;
-}
 
-.loops img, .games img, .fanart img
+.loops img, .games img
 {
 	cursor: pointer;
 }
