@@ -56,14 +56,11 @@ a
 	padding: 50px 0;
 	margin: auto;
 	max-width: 1000px;
-	min-width: 400px;
-	width: 100%;
-	height: auto;
 }
 .thumbnail
 {
 	display: inline-block;
-	float:left;
+	float: left;
 	cursor: pointer;
 	filter: contrast(100%) brightness(100%);
 }
