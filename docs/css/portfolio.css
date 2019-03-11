@@ -55,7 +55,7 @@ a
 	font-size: 0;
 	padding: 50px 0;
 	margin: auto;
-	max-width: 1000px;
+	max-width: 840px;
 }
 .thumbnail
 {
@@ -66,8 +66,8 @@ a
 }
 .thumbnail img
 {
-	width: 200px;
-	height: 200px;
+	width: 168px;
+	height: 168px;
 	object-fit: cover;
 }
 .caption
@@ -80,8 +80,8 @@ a
 	color: white;
 	text-shadow: 2px 2px 2px black;
 	background-color: rgba(0, 0, 0, 0);
-	width: 200px;
-	height: 200px;
+	width: 168px;
+	height: 168px;
 	-webkit-transition: .2s;
 	transition: .2s;
 }
@@ -103,24 +103,23 @@ a
 #overlay_close
 {
 	position: absolute;
-	opacity: 1;
 	top:0;
 	right:0;
 	color: white;
-	line-height: 110%; 
-	font-size: 40px;
+	font-size: 80px;
+	line-height: 65%;
 }
 #overlay_close::after
 {
-	content: "\2716\FE0E";
+	content: "\00D7\FE0E";
 }
 #overlay_close:hover
 {
-	opacity: .5;
+	filter: contrast(100%) brightness(50%);
 }
 .footer
 {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	background-color: #1A1A1A;
