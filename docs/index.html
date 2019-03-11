@@ -8,114 +8,56 @@
 <link rel="stylesheet" type="text/css" href="css/portfolio.css">
 <script src="js/portfolio.js"></script>
 </head>
-<body onload="scroll_btn('animation', 'art')" onresize="scroll_btn('animation', 'art')">
-<div id="overlay" onclick="image_close()">
-<div id="overlay_image"><img src="img/loops/loop_01.png" alt="Loop 01" name="image_current" style="max-width:100%; max-height:100%; width:auto; height:auto">
-</div>	
+<body>
+<div id="overlay" onclick="video_close()">
+	<div class="container">
+		<div class="videoWrapper">
+		<iframe id="responsive_video" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+		<div id="overlay_close" onclick="video_close()">✖</div>
+		</div>
+	</div>
 </div>
-<div class="frame_bg">
-<div class="frame">
+
 <div class="heading">
-<a href="#">
-<img src="img/home/art_title_x400.png" alt="Charles Quan Portfolio" style="max-width:100%; height:auto">
-</a>
+CHARLES QUAN
 </div>
 
-<!--<div class="subheading">Animation</div>-->
+<div class="subheading">WORK</div>
+<div style="font-size:25px; color:gray; font-weight:bold; text-align:center">MOTION GRAPHICS • CHARACTER ANIMATION</div>
 <div class="segment">
-	<div class="less" id="animation_less"></div>
-	<div class="more" id="animation_more"></div>
-	<div class="scroll" id="animation" onscroll="scroll_btn('animation')">
-	
-	<div class="thumbnail" onclick="video_set(0, 'uh8vuF8TUr4')" id="thumb_motion_01">
-	<script>videoArray.push("thumb_motion_01");</script>
+	<div class="thumbnail" onclick="video_set('uh8vuF8TUr4')">
 	<div class="caption">Motion Graphics 1</div>	
-	<img src="img/home/thumbnail_motion_01.png" alt="Thumnail Motion 01" style="width:168px; height:94px">
-	</div>
-	<div class="thumbnail" onclick="video_set(1, 'LBpAePJHgwk')" id="thumb_motion_02">
-	<script>videoArray.push("thumb_motion_02");</script>
+	<script>thumbnail_set('uh8vuF8TUr4')</script>
+	</div><!--
+	--><div class="thumbnail" onclick="video_set('LBpAePJHgwk')">
 	<div class="caption">Motion Graphics 2</div>	
-	<img src="img/home/thumbnail_motion_02.png" alt="Thumnail Motion 02" style="width:168px; height:94px">
-	</div>
-	<div class="thumbnail" onclick="video_set(2, '2q0REVLU8_g')" id="thumb_2d">
-	<script>videoArray.push("thumb_2d");</script>
+	<script>thumbnail_set('LBpAePJHgwk')</script>
+	</div><!--
+	--><div class="thumbnail" onclick="video_set('9LSrGuXJGJI')">
+	<div class="caption">Animated Loops</div>	
+	<script>thumbnail_set('9LSrGuXJGJI')</script>
+	</div><!--
+	--><div class="thumbnail" onclick="video_set('2q0REVLU8_g')">
 	<div class="caption">2D Character</div>	
-	<img src="img/home/thumbnail_2d.png" alt="Thumnail 2D" style="width:168px; height:94px">
-	</div>
-	<div class="thumbnail" onclick="video_set(3, '5iPXM7eKvaE')" id="thumb_3d">
-	<script>videoArray.push("thumb_3d");</script>
+	<script>thumbnail_set('2q0REVLU8_g')</script>
+	</div><!--
+	--><div class="thumbnail" onclick="video_set('5iPXM7eKvaE')">
 	<div class="caption">3D Character</div>	
-	<img src="img/home/thumbnail_3d.png" alt="Thumnail 3D" style="width:168px; height:94px">
-	</div>
-	<div class="thumbnail" onclick="video_set(4, 'mazeu_y431E')" id="thumb_mv">
-	<script>videoArray.push("thumb_mv");</script>
+	<script>thumbnail_set('5iPXM7eKvaE')</script>
+	</div><!--
+	--><div class="thumbnail" onclick="video_set('mazeu_y431E')">
 	<div class="caption">Music Video</div>	
-	<img src="img/home/thumbnail_mv.png" alt="Thumnail MV" style="width:168px; height:94px">
-	</div>
+	<script>thumbnail_set('mazeu_y431E')</script>
+	</div><!--
+	--><div class="thumbnail" onclick="video_set('uT--ThYagh4')">
+	<div class="caption">Morphing Animation</div>	
+	<script>thumbnail_set('uT--ThYagh4')</script>
 	</div>
 </div>
 
-<div class="container">
-<div class="videoWrapper">
-<iframe id="responsive_video" width="640" height="360" src="https://www.youtube.com/embed/uh8vuF8TUr4?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
+<div class="footer">
+<!--<p style="border-bottom:1px solid white; font-size:0">-->
 
-<p style="border-bottom:1px solid silver">
-
-<div class="loops">
-	<img src="img/loops/loop_01.gif" onclick="image_set('img/loops/loop_', '01', '.gif')" alt="Loop 01" style="width:; height:100px">
-	<img src="img/loops/loop_02.gif" onclick="image_set('img/loops/loop_', '02', '.gif')" alt="Loop 02" style="width:; height:100px">
-	<img src="img/loops/loop_03.gif" onclick="image_set('img/loops/loop_', '03', '.gif')" alt="Loop 03" style="width:; height:100px">
-	<img src="img/loops/loop_04.gif" onclick="image_set('img/loops/loop_', '04', '.gif')" alt="Loop 04" style="width:; height:100px">
-	<img src="img/loops/loop_05.gif" onclick="image_set('img/loops/loop_', '05', '.gif')" alt="Loop 05" style="width:; height:100px">
-	<img src="img/loops/loop_06.gif" onclick="image_set('img/loops/loop_', '06', '.gif')" alt="Loop 06" style="width:; height:100px">
-	<img src="img/loops/loop_07.gif" onclick="image_set('img/loops/loop_', '07', '.gif')" alt="Loop 07" style="width:; height:100px">
-	<img src="img/loops/loop_08.gif" onclick="image_set('img/loops/loop_', '08', '.gif')" alt="Loop 08" style="width:; height:100px">
-	<img src="img/loops/loop_09.gif" onclick="image_set('img/loops/loop_', '09', '.gif')" alt="Loop 09" style="width:; height:100px">
-	<img src="img/loops/loop_10.gif" onclick="image_set('img/loops/loop_', '10', '.gif')" alt="Loop 10" style="width:; height:100px">
-	<img src="img/loops/loop_11.gif" onclick="image_set('img/loops/loop_', '11', '.gif')" alt="Loop 11" style="width:; height:100px">
-	<img src="img/loops/loop_12.gif" onclick="image_set('img/loops/loop_', '12', '.gif')" alt="Loop 12" style="width:; height:100px">
-	<img src="img/loops/loop_13.gif" onclick="image_set('img/loops/loop_', '13', '.gif')" alt="Loop 13" style="width:; height:100px">
-	<img src="img/loops/loop_14.gif" onclick="image_set('img/loops/loop_', '14', '.gif')" alt="Loop 14" style="width:; height:100px">
-	<img src="img/loops/loop_15.gif" onclick="image_set('img/loops/loop_', '15', '.gif')" alt="Loop 15" style="width:; height:100px">
-	<img src="img/loops/loop_16.gif" onclick="image_set('img/loops/loop_', '16', '.gif')" alt="Loop 16" style="width:; height:100px">
-	<img src="img/loops/loop_17.gif" onclick="image_set('img/loops/loop_', '17', '.gif')" alt="Loop 17" style="width:; height:100px">
-	<img src="img/loops/loop_18.gif" onclick="image_set('img/loops/loop_', '18', '.gif')" alt="Loop 18" style="width:; height:100px">
-	<img src="img/loops/loop_19.gif" onclick="image_set('img/loops/loop_', '19', '.gif')" alt="Loop 19" style="width:; height:100px">
-	<img src="img/loops/loop_20.gif" onclick="image_set('img/loops/loop_', '20', '.gif')" alt="Loop 20" style="width:; height:100px">
-	<img src="img/loops/loop_21.gif" onclick="image_set('img/loops/loop_', '21', '.gif')" alt="Loop 21" style="width:; height:100px">
-	<img src="img/loops/loop_22.gif" onclick="image_set('img/loops/loop_', '22', '.gif')" alt="Loop 22" style="width:; height:100px">
-	<img src="img/loops/loop_23.gif" onclick="image_set('img/loops/loop_', '23', '.gif')" alt="Loop 23" style="width:; height:100px">
-	<img src="img/loops/loop_24.gif" onclick="image_set('img/loops/loop_', '24', '.gif')" alt="Loop 24" style="width:; height:100px">
-	<img src="img/loops/loop_25.gif" onclick="image_set('img/loops/loop_', '25', '.gif')" alt="Loop 25" style="width:; height:100px">
-	<img src="img/loops/loop_26.gif" onclick="image_set('img/loops/loop_', '26', '.gif')" alt="Loop 26" style="width:; height:100px">
-	<img src="img/loops/loop_27.gif" onclick="image_set('img/loops/loop_', '27', '.gif')" alt="Loop 27" style="width:; height:100px">
-	<img src="img/loops/loop_28.gif" onclick="image_set('img/loops/loop_', '28', '.gif')" alt="Loop 28" style="width:; height:100px">
-	<img src="img/loops/loop_29.gif" onclick="image_set('img/loops/loop_', '29', '.gif')" alt="Loop 29" style="width:; height:100px">
-	<img src="img/loops/loop_30.gif" onclick="image_set('img/loops/loop_', '30', '.gif')" alt="Loop 30" style="width:; height:100px">
-</div>
-
-<p style="border-bottom:1px solid silver">
-<!--<div class="subheading">Art</div>-->
-<div class="segment">
-	<div class="less" id="art_less" style="height:137px; line-height:137px"></div>
-	<div class="more" id="art_more" style="height:137px; line-height:137px"></div>
-	<div class="scroll"  id="art" onscroll="scroll_btn('art')">
-	<a href="portfolio_webdesign.html">
-	<div class="thumbnail">
-	<div class="caption">Web Design</div>
-	<img src="img/home/thumbnail_webdesign.png" alt="Thumnail Web Design" style="width:168px; height:94px">
-	</div>
-	</a>
-	<a href="portfolio_games.html">
-	<div class="thumbnail">
-	<div class="caption">Games</div>
-	<img src="img/home/thumbnail_games.png" alt="Thumnail Games" style="width:168px; height:94px">
-	</div>
-	</a>
-</div>
-<p style="border-bottom:1px solid silver">
 <p style="text-align:center">&copy; <span id="demo"></span><span> Charles Quan</span>
 <script>
 var d = new Date();
@@ -123,6 +65,6 @@ var n = d.getFullYear();
 document.getElementById("demo").innerHTML = n;
 </script>
 </div>
-</div>
+
 </body>
 </html>

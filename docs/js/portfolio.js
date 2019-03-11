@@ -1,96 +1,21 @@
-var video_number = "";
 var video_id = "";
-var videoArray = [];
+var counter = 0;
 
-function video_set(number, id)
+function video_set(id)
 {
-	video_number = number;
-	video_id = id;
-
-	document.getElementById("responsive_video").src = "https://www.youtube.com/embed/" + video_id + "?rel=0&autoplay=1";
-
-	for(var i = 0; i < videoArray.length; i++)
-	{
-		document.getElementById(videoArray[i]).style.border = "none";
-		document.getElementById(videoArray[i]).style.backgroundColor = "silver";
-	}
-
-	document.getElementById(videoArray[video_number]).style.border = "4px solid dimgray";
-	document.getElementById(videoArray[video_number]).style.backgroundColor = "dimgray";
-}
-
-function scroll_btn()
-{
-	for(var i = 0; i < arguments.length; i++)
-	{
-		if(document.getElementById(arguments[i]).scrollWidth > document.getElementById(arguments[i]).clientWidth)
-		{
-			if(document.getElementById(arguments[i]).scrollLeft == 0)
-			{
-				document.getElementById(arguments[i] + "_less").style.visibility = "hidden";
-			}
-			else
-			{
-				document.getElementById(arguments[i] + "_less").style.visibility = "visible";
-			}
-			if(document.getElementById(arguments[i]).scrollLeft == (document.getElementById(arguments[i]).scrollWidth - document.getElementById(arguments[i]).clientWidth))
-			{
-				document.getElementById(arguments[i] + "_more").style.visibility = "hidden";
-			}
-			else
-			{
-				document.getElementById(arguments[i] + "_more").style.visibility = "visible";
-			}
-		}
-		else
-		{
-			document.getElementById(arguments[i] + "_less").style.visibility = "hidden";
-			document.getElementById(arguments[i] + "_more").style.visibility = "hidden";	
-		}
-	}
-}
-
-//games & fanart
-
-var image_src = "";
-var image_id = "";
-var image_type = "";
-
-function image_set(src, id, type)
-{
-	image_src = src;
-	image_id = id;
-	image_type = type;
+	document.getElementById("responsive_video").src = "https://www.youtube.com/embed/" + id + "?rel=0&autoplay=1";
 	document.getElementById("overlay").style.display = "block";
-	document.image_current.src = image_src + image_id + image_type;
 }
-function image_close()
+function video_close()
 {
 	document.getElementById("overlay").style.display = "none";
+	document.getElementById("responsive_video").src = "";
 }
 
-//small image scaling
-/*
-function image_resize(width, height)
+function thumbnail_set(id)
 {
-	var image_w = width;
-	var image_h = height;
-
-	if(window.innerWidth < window.innerHeight * (image_w / image_h))
-	{
-		image_current.style.width = window.innerWidth + "px";	
-		image_current.style.height = window.innerWidth / (image_w / image_h) + "px";
-	}
-	if(window.innerHeight <  window.innerWidth / (image_w / image_h))
-	{		
-		image_current.style.height = window.innerHeight + "px";	
-		image_current.style.width = window.innerHeight * (image_w / image_h) + "px";
-	}
-	if(window.innerWidth >= image_w && window.innerHeight >= image_h)
-	{
-		
-		image_current.style.width = image_w + "px";
-		image_current.style.height = image_h + "px";
-	}
+	var x = document.createElement("img");
+    x.setAttribute("src", "https://img.youtube.com/vi/" + id + "/maxresdefault.jpg");
+    document.getElementsByClassName("thumbnail")[counter].appendChild(x);
+    counter++;
 }
-*/
