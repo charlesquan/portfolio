@@ -110,6 +110,10 @@ a
 	line-height: 110%; 
 	font-size: 40px;
 }
+#overlay_close::after
+{
+	content: "\2716\FE0E";
+}
 #overlay_close:hover
 {
 	opacity: .5;
