@@ -46,8 +46,8 @@ a
 	text-align: center;
 	padding: 20px 0;
 	text-decoration: underline;
-  	-webkit-text-decoration-color: aqua;
-  	text-decoration-color: aqua;
+	-webkit-text-decoration-color: aqua;
+	text-decoration-color: aqua;
 }
 .segment
 {
@@ -74,8 +74,8 @@ a
 {
 	position: absolute;
 	top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
+	left: 50%;
+	transform:translate(-50%, -50%);
 	font-size: 20px;
 	color: white;
 	text-shadow: 2px 2px 2px black;

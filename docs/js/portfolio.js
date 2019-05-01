@@ -15,7 +15,15 @@ function video_close()
 function thumbnail_set(id)
 {
 	var x = document.createElement("img");
-    x.setAttribute("src", "https://img.youtube.com/vi/" + id + "/maxresdefault.jpg");
-    document.getElementsByClassName("thumbnail")[counter].appendChild(x);
-    counter++;
+	x.setAttribute("src", "https://img.youtube.com/vi/" + id + "/maxresdefault.jpg");
+	document.getElementsByClassName("thumbnail")[counter].appendChild(x);
+	counter++;
+}
+
+function thumbnail_set_old(id)
+{
+	var x = document.createElement("img");
+	x.setAttribute("src", "https://img.youtube.com/vi/" + id + "/hqdefault.jpg");
+	document.getElementsByClassName("thumbnail")[counter].appendChild(x);
+	counter++;
 }
