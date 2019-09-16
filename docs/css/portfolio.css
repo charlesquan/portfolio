@@ -9,6 +9,25 @@ body
 a
 {
 	text-decoration: none;
+	color: white;
+}
+#work a:hover
+{
+	color: aqua;
+}
+#videogames a:hover
+{
+	color: deeppink;
+}
+li
+{
+	list-style-type: none;
+	font-family: "arial narrow";
+	float: left;
+	font-size: 25px;
+	font-weight: bold;
+	user-select: none;
+	padding: 0 20px;
 }
 .container
 {
