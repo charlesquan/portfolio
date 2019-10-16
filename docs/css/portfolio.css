@@ -76,6 +76,14 @@ li
 	margin: auto;
 	max-width: 816px;
 }
+#segment_vg
+{
+	text-align: center;
+	font-size: 0;
+	padding: 0;
+	margin: auto;
+	max-width: 856px;
+}
 .thumbnail
 {
 	display: inline-block;
