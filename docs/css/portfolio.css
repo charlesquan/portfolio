@@ -74,7 +74,7 @@ li
 	font-size: 0;
 	padding: 50px 0;
 	margin: auto;
-	max-width: 1000px;
+	max-width: 816px;
 }
 .thumbnail
 {
@@ -82,6 +82,8 @@ li
 	float: left;
 	cursor: pointer;
 	filter: contrast(100%) brightness(100%);
+	border: 2px solid rgba(255, 255, 255, 0);
+	transition: .2s;
 }
 .thumbnail img
 {
@@ -98,7 +100,7 @@ li
 	font-size: 20px;
 	color: white;
 	text-shadow: 2px 2px 2px black;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(255, 255, 255, 0);
 	width: 200px;
 	height: 200px;
 	-webkit-transition: .2s;
@@ -107,8 +109,13 @@ li
 .thumbnail:hover > .caption
 {
 	height: 20px;
-	background-color: rgba(0, 0, 0, .5);
+	color: black;
 	text-shadow: 0px 0px 0px black;
+	background-color: rgba(255, 255, 255, 1);
+}
+.thumbnail:hover
+{
+	border: 2px solid rgba(255, 255, 255, 1);
 }
 #overlay
 {
