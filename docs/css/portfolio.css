@@ -76,18 +76,40 @@ li
 	margin: auto;
 	max-width: 816px;
 }
-#segment_vg
+.segment_vg
 {
 	text-align: center;
 	font-size: 0;
 	padding: 0;
 	margin: auto;
-	max-width: 856px;
+	max-width: 860px;
+}
+.segment_sub
+{
+	display: inline-block;
+	padding: 10px;
+	margin: -2px;
+	border-bottom: 4px solid #4D4D4D;
+	width: 408px;
+	transition: .2s;
+}
+.segment_sub:nth-child(even)
+{
+	background-color: #4D4D4D;
+	border-top: 4px solid #333333;
+	border-bottom: 4px solid #333333;
+}
+.segment_sub:nth-last-child(2)
+{
+	border-bottom: 4px solid #333333;
+}
+.segment_sub:hover
+{
+	background-color: #666666;
 }
 .thumbnail
 {
 	display: inline-block;
-	float: left;
 	cursor: pointer;
 	filter: contrast(100%) brightness(100%);
 	border: 2px solid rgba(255, 255, 255, 0);
