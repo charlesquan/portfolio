@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<link rel="icon" href="img/home/showreel_robot.png">
+<title>Charles Quan Portfolio</title>
+<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+<script src="js/portfolio.js"></script>
+</head>
+<body onresize="menu_close()">
+<div id="overlay" onclick="image_close()">
+	<div id="overlay_image"><img src="img/graphics/avatar_youtube.png" alt="Talks and Takeaways Logo" name="image_current" style="max-width:100%; max-height:100%; width:auto; height:auto">
+		<div id="overlay_close" onclick="image_close()"></div>
+	</div>	
+</div>
+
+<div class="header">
+Charles Quan
+<div class="menu" id="menu" onclick="burger(this)">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+</div>	
+</div>
+<nav class="nav" id="nav">
+<ul>
+	<li><a href="index.html">Animation</a></li>
+	<li><a href="graphics.html" style="text-decoration-line:underline">Graphic Design</a></li>
+</ul>
+</nav>
+
+<div class="row">
+	<div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="image_set('img/graphics/youtube_logo.png')">
+	<div class="caption">Talks and Takeaways Logo</div>	
+	<script>thumbnail_set('img/graphics/youtube_logo.png', false, true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="image_set('img/graphics/youtube_banner.png')">
+	<div class="caption">Talks and Takeaways Banner</div>	
+	<script>thumbnail_set('img/graphics/youtube_banner.png', false, true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="image_set('img/graphics/melle_welcome.png')">
+	<div class="caption">My Cat Melle Welcome Image</div>	
+	<script>thumbnail_set('img/graphics/melle_welcome.png', false, true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="image_set('img/graphics/melle_merchandise.png')">
+	<div class="caption">My Cat Melle Merchandise</div>	
+	<script>thumbnail_set('img/graphics/melle_merchandise.png', false, true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="image_set('img/graphics/melle_pattern_01.png')">
+	<div class="caption">My Cat Melle Pattern 01</div>	
+	<script>thumbnail_set('img/graphics/melle_pattern_01.png', false, true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="image_set('img/graphics/melle_pattern_02.png')">
+	<div class="caption">My Cat Melle Pattern 02</div>	
+	<script>thumbnail_set('img/graphics/melle_pattern_02.png', false, true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="image_set('img/graphics/melle_pattern_03.png')">
+	<div class="caption">My Cat Melle Pattern 03</div>	
+	<script>thumbnail_set('img/graphics/melle_pattern_03.png', false, true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="image_set('img/graphics/melle_poster.png')">
+	<div class="caption">My Cat Melle Poster</div>	
+	<script>thumbnail_set('img/graphics/melle_poster.png', false, true)</script>
+	</div>
+</div>
+
+<div class="footer">
+<!--<p style="border-bottom:1px solid white; font-size:0">-->
+
+<p style="text-align:center">&copy; <span id="demo"></span><span> Charles Quan. All Rights Reserved.</span>
+<script>
+var d = new Date();
+var n = d.getFullYear();
+document.getElementById("demo").innerHTML = n;
+</script>
+</div>
+
+</body>
+</html>

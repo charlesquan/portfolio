@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/portfolio.css">
 <script src="js/portfolio.js"></script>
 </head>
-<body>
+<body onresize="menu_close()">
 <div id="overlay" onclick="video_close()">
 	<div class="container">
 		<div class="videoWrapper">
@@ -18,62 +18,92 @@
 	</div>
 </div>
 
-<div class="heading">
-CHARLES QUAN
+<div class="header">
+Charles Quan
+<div class="menu" id="menu" onclick="burger(this)">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+</div>	
 </div>
-
-<nav style="float:left">
+<nav class="nav" id="nav">
 <ul>
-	<li id="work"><a href="index.html" style="color:aqua">WORK</a></li>
-	<li id="videogames"><a href="videogames.html">VIDEO GAMES</a></li>
+	<li><a href="index.html" style="text-decoration-line:underline">Animation</a></li>
+	<li><a href="graphics.html">Graphic Design</a></li>
 </ul>
 </nav>
 
-<p style="clear:both;border-bottom:4px solid #4D4D4D">
-
-<div class="subheading">WORK</div>
-<div style="font-size:25px; color:gray; font-weight:bold; text-align:center">MOTION GRAPHICS • CHARACTER ANIMATION</div>
-<div class="segment">
-	<div class="thumbnail" onclick="video_set('lzNmgQDDmUA')">
-	<div class="caption">Motion Graphics 1</div>	
-	<script>thumbnail_set_old('lzNmgQDDmUA')</script>
+<div class="row">
+	<div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('lzNmgQDDmUA')">
+	<div class="caption">Motion Graphics Reel 2019</div>	
+	<script>thumbnail_set('lzNmgQDDmUA', true)</script>
 	</div><!--
-	--><div class="thumbnail" onclick="video_set('uh8vuF8TUr4')">
-	<div class="caption">Motion Graphics 2</div>	
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('uh8vuF8TUr4')">
+	<div class="caption">2D Motion Graphics</div>	
 	<script>thumbnail_set('uh8vuF8TUr4')</script>
 	</div><!--
-	--><div class="thumbnail" onclick="video_set('LBpAePJHgwk')">
-	<div class="caption">Motion Graphics 3</div>	
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('LBpAePJHgwk')">
+	<div class="caption">Motion Graphics Campaign Sample</div>	
 	<script>thumbnail_set('LBpAePJHgwk')</script>
 	</div><!--
-	--><div class="thumbnail" onclick="video_set('9LSrGuXJGJI')">
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('9LSrGuXJGJI')">
 	<div class="caption">Animated Loops</div>	
 	<script>thumbnail_set('9LSrGuXJGJI')</script>
 	</div><!--
-	--><div class="thumbnail" onclick="video_set('2q0REVLU8_g')">
-	<div class="caption">2D Character</div>	
-	<script>thumbnail_set('2q0REVLU8_g')</script>
-	</div><!--
-	--><div class="thumbnail" onclick="video_set('5iPXM7eKvaE')">
-	<div class="caption">3D Character</div>	
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('5iPXM7eKvaE')">
+	<div class="caption">3D Character Reel 2018</div>	
 	<script>thumbnail_set('5iPXM7eKvaE')</script>
 	</div><!--
-	--><div class="thumbnail" onclick="video_set('mazeu_y431E')">
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('HrR67t_BXpo')">
+	<div class="caption">2D Character Reel 2015</div>	
+	<script>thumbnail_set('HrR67t_BXpo')</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('mazeu_y431E')">
 	<div class="caption">Music Video</div>	
 	<script>thumbnail_set('mazeu_y431E')</script>
 	</div><!--
-	--><div class="thumbnail" onclick="video_set('uT--ThYagh4')">
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('uT--ThYagh4')">
 	<div class="caption">Morphing Animation</div>	
 	<script>thumbnail_set('uT--ThYagh4')</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('laGJ5tiwahQ')">
+	<div class="caption">3D Character Lip Sync</div>	
+	<script>thumbnail_set('laGJ5tiwahQ', true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('yAv3uVg01rQ')">
+	<div class="caption">Short Film - "Fizz Fight"</div>	
+	<script>thumbnail_set('yAv3uVg01rQ')</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('G54IPV81rbo')">
+	<div class="caption">Short Film - "8-bit Atrocity"</div>	
+	<script>thumbnail_set('G54IPV81rbo')</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('kvyfova1K_A')">
+	<div class="caption">Short Film - "At the Arcade"</div>	
+	<script>thumbnail_set('kvyfova1K_A')</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('yCFu6fdxV20')">
+	<div class="caption">Short Film - "Unsettled"</div>	
+	<script>thumbnail_set('yCFu6fdxV20', true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('FHZZkoqDpC0')">
+	<div class="caption">Short Film - "Music Matters"</div>	
+	<script>thumbnail_set('FHZZkoqDpC0', true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('7LffbL_k6YU')">
+	<div class="caption">Soundscape</div>	
+	<script>thumbnail_set('7LffbL_k6YU', true)</script>
+	</div><!--
+	--><div class="thumbnail col-l-3 col-m-4 col-s-6" onclick="video_set('o4PA7rbxdQU')">
+	<div class="caption">2D Character Reel 2009</div>	
+	<script>thumbnail_set('o4PA7rbxdQU', true)</script>
 	</div>
 </div>
-
-<div style="clear:left; padding:40px"></div>
 
 <div class="footer">
 <!--<p style="border-bottom:1px solid white; font-size:0">-->
 
-<p style="text-align:center">&copy; <span id="demo"></span><span> Charles Quan</span>
+<p style="text-align:center">&copy; <span id="demo"></span><span> Charles Quan. All Rights Reserved.</span>
 <script>
 var d = new Date();
 var n = d.getFullYear();
